@@ -1,0 +1,150 @@
+// This File is imported last, and will override other styles in the cascade
+// Add styles here to make changes without digging in too much
+@import "footnote";
+
+html {
+  background: $page-bg;
+}
+
+body, .entry-title {
+    font-family: $blog-font-family;
+
+}
+
+header[role="banner"] {
+    border-bottom: 5px solid $header-border;
+
+    h1 {
+        font-family: $blog-font-family;
+        line-height: 1em;
+        font-size:3em;
+        margin-left:-3px;
+    }
+
+    padding-bottom:1em;
+}
+
+article.hentry {
+    margin-top:33px;
+}
+
+div.blog-index {
+    margin-top:50px;
+}
+
+
+@media only screen and (min-width: 480px) {
+    header[role="banner"], nav[role="navigation"] {
+    }
+    body {
+        margin: 0 3%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body { font-size: 1.0625em; }
+}
+
+
+@media only screen and (min-width: 1150px) {
+    body {
+        margin: 0 auto;
+    }
+
+    header[role="banner"] {
+        position:fixed;
+        margin-left:50px;
+        padding-bottom: 15px;
+        padding-left: 0;
+        width: 200px;
+    }
+
+
+    div#main {
+        width: 72.5%;
+        background: none;
+        margin-right: 2.5%;
+        border: none;
+    }
+    div#content {
+        background: none;
+
+        aside.sidebar {
+            div.sidebar-inner {
+                // width:260px;
+            }
+        }
+    }
+
+    div#layout_page {
+        padding-top:62px;
+    }
+
+
+    footer[role="contentinfo"] {
+        clear: both;
+        position: fixed;
+        width:200px;
+        top:500px;
+        background:none;
+        border:none;
+    }
+
+    nav[role="navigation"] {
+        border: none;
+        position:fixed;
+        top:190px;
+        width: 200px;
+
+
+        form {
+            float:none;
+            clear:both;
+            padding-left: 0;
+            fieldset {
+                float:none;
+            }
+        }
+        ul {
+            li, &.subscription {
+                margin: 5px 0;
+                padding:0;
+            }
+            &.subscription {
+                margin: 5px 0;
+                float: none;
+            }
+            &.main-navigation {
+                float:none;
+                li {
+                    clear:left;
+                }
+            }
+            li {
+                border:none;
+
+                a {
+                    border:none;
+                    padding:0;
+                }
+
+            }
+        }
+        // show 'rss' instead of feed symbol
+        a[rel=subscribe-rss] {
+            text-indent: 0;
+
+            //remove gray square for masking
+            background-color:transparent;
+
+            // take out mask itself
+            -webkit-mask-image: none;
+            -moz-mask-image: none;
+            -ms-mask-image: none;
+            -o-mask-image: none;
+            &:after {
+                content:none;
+            }
+        }
+    }
+}
