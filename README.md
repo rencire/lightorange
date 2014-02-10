@@ -1,6 +1,6 @@
-# LightOrange - an Octopress theme
+# LightOrange 
 
-Theme for Eric Ren's website and blog
+LightOrange is a simple octopress theme that extends the Classic theme. Currrently it is still a work in progress. You can view a demo [here](http://ericren.me).
 
 Note: file structure is a bit messy.  Things to do:
 - Need to move custom scss to base scss files.  
