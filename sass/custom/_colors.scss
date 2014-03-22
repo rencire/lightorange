@@ -15,14 +15,16 @@ $header-border: $link-color-hover;
 
 $title-color: #6B6761;
 //$subtitle-color: lighten($header-bg, 58);
+$text-color: #4e4e4e;
+$nav-color: adjust-color($text-color, $lightness:25);
 $nav-bg: #ffffff;
 $nav-color-hover: #ed6f45;
 
 $nav-bg-front: #ffffff ;
 $nav-bg-back: #ffffff ;
 $sidebar-bg: #ffffff;
-$sidebar-link-color: #ffffff;
-$sidebar-link-color-hover: #ffffff;
+$sidebar-link-color: #4e4e4e;
+// $sidebar-link-color-hover: #ffffff;
 //$footer-bg: #ccc !default;
 //$footer-bg-front: image-url('noise.png');
 $footer-bg-back: none;

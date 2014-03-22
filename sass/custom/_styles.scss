@@ -6,16 +6,11 @@ html {
   background: $page-bg;
 }
 
-body, .entry-title {
-    font-family: $blog-font-family;
-
-}
 
 header[role="banner"] {
     border-bottom: 5px solid $header-border;
 
     h1 {
-        font-family: $blog-font-family;
         line-height: 1em;
         font-size:3em;
         margin-left:-3px;
@@ -70,6 +65,9 @@ div.blog-index {
         background: none;
 
         aside.sidebar {
+            #recent_posts a {
+                text-decoration: none;
+            }
             div.sidebar-inner {
                 // width:260px;
             }
@@ -88,6 +86,7 @@ div.blog-index {
         top:500px;
         background:none;
         border:none;
+        text-shadow:none;
     }
 
     nav[role="navigation"] {
